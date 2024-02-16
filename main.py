@@ -1,18 +1,11 @@
 import csv
 import requests
 from bs4 import BeautifulSoup
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-import time
+from secret import USER_AGENT, ACCEPT, ACCEPT_ENCODING, ACCEPT_LANGUAGE, REQUEST_LINE
 
 title = ["POINTS", "REBOUNDS", "ASSISTS", "BLOCKS", "STEALS", "TURNOVER", "THREE POINTERS MADE",
          "FREE THROWS MADE", "FANTASY POINTS"]
 
-USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36"
-ACCEPT_LANGUAGE = "en-US,en;q=0.9"
-REQUEST_LINE = "GET / HTTP/1.1"
-ACCEPT_ENCODING = "gzip, deflate, br"
-ACCEPT = "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
 #     playableTile__descriptionContainer
 
 NBA_LINK = "https://www.nba.com/stats"
