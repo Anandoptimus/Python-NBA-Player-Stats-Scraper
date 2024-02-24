@@ -18,7 +18,7 @@ This Python script scrapes NBA player statistics from the official NBA website a
    - Install required libraries using `pip install -r requirements.txt`.
 
 2. **Run the Script:**
-   - Execute the script using Python: `python nba_stats_scraper.py`.
+   - Execute the script using Python: `python main.py`.
 
 3. **Check CSV Files:**
    - Find separate CSV files for each statistical category, organized by player names and points.
